@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: white;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+             <div class="logo"><img src="adityalogo.png" height="70px" width="100px"><h2>ADITYA DEGREE COLLEGE<br> AMALAPURAM</h2></div>
+                 <a href="#college homepage.html"> Home</a> 
+                 <a href="faculty.html">Faculty</a> 
+                 <div class="dropdown">
+                <a href="#">Management ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="chairman.html">Chairman</a></li>
+                <li><a href="secretary.html">Secretary</a></li>
+                <li><a href="principal.html">Principal</a></li>
+            </ul>
+                 </div>
+                 <a href="gallery.html">Gallery</a>
+                 <a href="contact.html">Contact </a>
+               
+          </nav>
+       </header>
+
+    <h1>College Gallery</h1>
+
+    <div class="gallery">
+        <img src="images/college1.jpg" alt="College Image 1">
+        <img src="images/college2.jpg" alt="College Image 2">
+        <img src="images/college3.jpg" alt="College Image 3">
+        <img src="images/college4.jpg" alt="College Image 4">
+        <img src="images/college5.jpg" alt="College Image 5">
+        <img src="images/college6.jpg" alt="College Image 6">
+    </div>
+
+</body>
+</html>

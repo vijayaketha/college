@@ -1,0 +1,21 @@
+.box-one{  
+    width:150px;
+    height:150px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.box-two{
+    width:150px;
+    height: 150px;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}

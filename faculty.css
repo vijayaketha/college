@@ -1,0 +1,191 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* ===== HEADER & NAVBAR ===== */
+header {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    font-size: 18px;
+    color: #0a3d62;
+}
+
+/* NAV LINKS */
+.nav a {
+    text-decoration: none;
+    color: #0a3d62;
+    font-weight: 600;
+    margin: 0 12px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+.nav a:hover {
+    background-color: #0a3d62;
+    color: white;
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(10,61,98,0.4);
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a {
+    cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 220px;
+    background-color: white;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    list-style: none;
+    padding: 6px 0;
+    z-index: 3000;
+}
+
+/* Dropdown items */
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 18px;
+    color: #333;
+    font-size: 14.5px;
+    border-radius: 0;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f2f6fb;
+    color: #0a3d62;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* ===== FACULTY SECTION ===== */
+.faculty {
+    padding: 70px 50px;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+.faculty h2 {
+    font-size: 34px;
+    color: #0a3d62;
+    margin-bottom: 45px;
+}
+
+/* ===== FACULTY GRID ===== */
+.faculty-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+/* ===== FACULTY CARD ===== */
+.faculty-card {
+    background-color: white;
+    padding: 30px 22px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+.faculty-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 14px 30px rgba(10,61,98,0.4);
+}
+
+/* FACULTY IMAGE */
+.faculty-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0a3d62;
+    margin-bottom: 15px;
+}
+
+/* FACULTY NAME */
+.faculty-card h3 {
+    font-size: 20px;
+    color: #0a3d62;
+    margin-bottom: 6px;
+}
+
+/* ===== DESIGNATION BADGE ===== */
+.designation {
+    display: inline-block;
+    background-color: #0a3d62;
+    color: white;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+/* ===== DEPARTMENT ===== */
+.dept {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    margin: 6px 0;
+}
+
+/* ===== QUALIFICATION / EXPERIENCE BADGE ===== */
+.qual {
+    display: inline-block;
+    background-color: #dff9fb;
+    color: #0a3d62;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+    border: 1px solid #0a3d62;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

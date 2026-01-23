@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Aditya Degree College</title>
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="faculty.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #0a3d62;
+            font-weight: 600;
+            margin: 0 12px;
+            padding: 8px 14px;
+            border-radius: 20px;
+            transition: all 0.4s ease;
+        }
+
+        .nav a:hover {
+            background-color: #0a3d62;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo h2 {
+            font-size: 18px;
+            color: #0a3d62;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            align-items: stretch; /* equal height for contact & map */
+        }
+
+        /* Left: Contact Card */
+        .contact-container {
+            flex: 1 1 550px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-container h2 {
+            color: #004aad;
+            margin-bottom: 20px;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-label {
+            flex: 0 0 130px; /* fixed width for labels */
+            font-weight: bold;
+            color: #004aad;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-label i {
+            color: #004aad;
+            font-size: 18px;
+        }
+
+        .contact-info {
+            flex: 1;
+            color: #333;
+        }
+
+        .contact-info a {
+            color: #004aad;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Right: Map */
+        .map-container {
+            flex: 0 0 400px; /* fixed width for map */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            display: flex;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 900px) {
+            .contact-section {
+                flex-direction: column;
+            }
+
+            .map-container {
+                flex: 1 1 100%;
+                min-height: 300px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <nav class="nav">
+        <div class="logo">
+            <img src="adityalogo.png" height="70" width="100">
+            <h2>ADITYA DEGREE COLLEGE<br>AMALAPURAM</h2>
+        </div>
+
+        <a href="college homepage.html">Home</a>
+        <a href="faculty.html">Faculty</a>
+
+        <div class="dropdown">
+            <a href="#">Management ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="chairman.html">Chairman</a></li>
+                <li><a href="secretary.html">Secretary</a></li>
+                <li><a href="principal.html">Principal</a></li>
+            </ul>
+        </div>
+
+        <a href="department.html">Department</a>
+        <a href="contact.html">Contact</a>
+    </nav>a
+</header>
+
+<section class="contact-section">
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+
+        <div class="contact-row">
+            <div class="contact-label"><i class="fas fa-map-marker-alt"></i> Address:</div>
+            <div class="contact-info">
+                Beside R.T.C Complex, Edarapalli, Amalapuram, Dr. B.R. Ambedkar Konaseema Dist. - 533 201. 
+            </div>
+        </div>
+
+        <div class="contact-row">
+            <div class="contact-label"><i class="fas fa-phone"></i> Phone:</div>
+            <div class="contact-info">
+                +91 79972 76664, +91 79972 77665, +91 90107 96669
+            </div>
+        </div>
+
+        <div class="contact-row">
+            <div class="contact-label"><i class="fas fa-envelope"></i> Email:</div>
+            <div class="contact-info">
+                <a href="adcamp@aditya.ac.in">adcamp@aditya.ac.in</a>
+            </div>
+        </div>
+
+        <div class="contact-row">
+            <div class="contact-label"><i class="fas fa-globe"></i> Website:</div>
+            <div class="contact-info">
+                <a href="https://adityadegreecollegeamalapuram.in/" target="_blank">
+                    https://adityadegreecollegeamalapuram.in/
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-row">
+            <div class="contact-label"><i class="fas fa-clock"></i> Office Hours:</div>
+            <div class="contact-info">Mon - Sat, 9:00 AM - 5:00 PM</div>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Aditya%20Degree%20College%20Amalapuram&output=embed" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2025 Aditya Degree College | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
